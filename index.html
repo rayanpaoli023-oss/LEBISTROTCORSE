@@ -51,7 +51,7 @@ section { padding-block: clamp(4rem, 10vw, 7.5rem); }
 /* ── Boutons utilitaires ── */
 .pitch-btn { position: fixed; z-index: 74; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); background: var(--fg); color: var(--bg); border: 0; border-radius: 999px; padding: .75rem 1.2rem; font: 600 .82rem var(--font-body); cursor: pointer; box-shadow: 0 10px 30px rgba(0, 0, 0, .35); display: flex; gap: .5rem; align-items: center; }
 .pitch-btn i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: block; }
-@media (max-width: 700px) { .pitch-btn { bottom: calc(86px + env(safe-area-inset-bottom, 0px)); } }
+@media (max-width: 700px) { .pitch-btn { display: none; } }
 .pitch { position: fixed; z-index: 110; top: 0; right: 0; bottom: 0; width: min(440px, 100%); background: var(--bg); color: var(--fg); border-left: 1px solid var(--line); padding: calc(1.6rem + env(safe-area-inset-top, 0px)) max(1.4rem, env(safe-area-inset-right, 0px)) calc(1.6rem + env(safe-area-inset-bottom, 0px)) 1.6rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1.2rem; box-shadow: -20px 0 60px rgba(0, 0, 0, .4); animation: slide .4s cubic-bezier(.2, .7, .2, 1); }
 @keyframes slide { from { transform: translateX(40px); opacity: 0; } }
 .pitch h3 { font-size: 2rem; }
